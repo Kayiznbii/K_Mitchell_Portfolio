@@ -1,0 +1,38 @@
+/* Color Scheme 
+Dark Purple - #3c1361
+Dark Violet - #5237c
+Med Purple - #663a82
+Med Violet - #7c5295
+Light Purple - #b491c8
+Light Violet #bca0dc
+*/
+
+body {
+    background-color: rgb(24,26,24);
+}
+
+/* Navigation */
+
+.sidenav {
+    height: 40%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    padding: 50px 8px 8px 32px;
+    background-size: contain;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transform: rotate(90deg);
+}
+
+.sidenav a:hover {
+    color: #bCA0DC;
+    text-decoration: none;
+}
