@@ -7,41 +7,68 @@ Light Purple - #b491c8
 Light Violet #bca0dc
 */
 
+h1 {
+    color: rgb(91, 94, 91);
+    font-size: 60px;
+}
+
+
 body {
     background-color: rgb(24,26,24);
+    color: white;
 }
 
 /* Navigation */
 
-.sidenav {
-    height: 40%;
-    width: 100px;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    overflow-x: hidden;
+.navigation {
+    overflow: hidden;
+    background-color: rgb(24,26,24);
 }
 
-.sidenav a {
-    padding: 50px 8px 8px 32px;
-    background-size: contain;
-    font-size: 20px;
-    color: white;
+.name {
+    overflow: hidden;
+    background-color: rgb(24,26,24);
+}
+
+.name p {
+    float: left;
     display: block;
-    transform: rotate(90deg);
+    color: #7c5295;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-.sidenav a:hover {
-    color: #bCA0DC;
+.navigation a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
     text-decoration: none;
+    font-size: 20px;
 }
+
+.navigation a:hover {
+    color: #b491c8;
+}
+
+.content {
+    padding: 16px;
+}
+
 
 /* Main content */
 
 .border-color {
     border: 3px solid #3c1361;
     animation: 4s infinite color;
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+    border-top: none;
+    border-right: none;
 }
 @keyframes color{
     0% {
@@ -61,6 +88,15 @@ body {
     }
 }
 
+
 .main-content {
-    margin-top: 60px;
+    margin-top: 150px;
+}
+
+.spacing {
+    margin: 200px;
+}
+
+.center{
+    text-align: center;
 }
