@@ -36,3 +36,31 @@ body {
     color: #bCA0DC;
     text-decoration: none;
 }
+
+/* Main content */
+
+.border-color {
+    border: 3px solid #3c1361;
+    animation: 4s infinite color;
+}
+@keyframes color{
+    0% {
+        border-color: #3c1361;
+    }
+    25% {
+        border-color: #663a82;
+    }
+    50% {
+        border-color: #7c5295;
+    }
+    75% {
+        border-color: #b491c8;
+    }
+    100% {
+        border-color: #3c1361;
+    }
+}
+
+.main-content {
+    margin-top: 60px;
+}
