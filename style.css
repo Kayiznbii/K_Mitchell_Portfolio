@@ -13,17 +13,12 @@ h1 {
 }
 
 
-body {
+.dark-body {
     background-color: rgb(24,26,24);
     color: white;
 }
 
 /* Navigation */
-
-.navigation {
-    overflow: hidden;
-    background-color: rgb(24,26,24);
-}
 
 .name {
     overflow: hidden;
@@ -40,14 +35,18 @@ body {
     font-size: 20px;
 }
 
-.navigation a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
+.navigation {
+    overflow: hidden;
+    background-color: rgb(24,26,24);
     font-size: 20px;
+    padding-top: 20px;
+    float: right;
+}
+
+.navigation a {
+    padding-right: 15px;
+    color: white;
+    text-decoration: none;
 }
 
 .navigation a:hover {
@@ -62,7 +61,7 @@ body {
 /* Main content */
 
 .border-color {
-    border: 3px solid #3c1361;
+    border: 5px solid #3c1361;
     animation: 4s infinite color;
     padding: 10px;
     margin: 10px;
@@ -100,3 +99,74 @@ body {
 .center{
     text-align: center;
 }
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background: url(bg.jpg)no-repeat center;
+}
+
+ul {
+    padding-top: 15px;
+}
+
+ul li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+ul li a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+li:hover a {
+    color:#7c5295;
+    text-decoration: none;
+}
+
+.enlarge-text {
+    transition: transform.2s
+}
+
+.enlarge-text:hover {
+    transform: scale(1.2);
+}
+
+
+/* .projects a {
+    padding-top: 15px;
+}
+
+.projects p span {
+    position: absolute;
+    display: none;
+    z-index: 99;
+    transform: scale(0);
+    overflow: hidden;
+}
+
+.projects p:hover span {
+    display: block;
+    transform: translate(70%, 0%) scale(1);
+}
+
+.projects a:hover {
+    color:#7c5295;
+    text-decoration: none;
+}
+
+.enlarge-text {
+    transition: transform.2s
+}
+
+.enlarge-text:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+} */

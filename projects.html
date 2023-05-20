@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>Home</title>
@@ -29,27 +29,33 @@
     </div>
 
     <div class="container-fluid">
-        <main class="main-content">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <h1>WELCOME.</h1>
-                    <p class="border-color">
-                        Hi I'm Kalyn! I am a current student at Boise State University pursuing a Bachelor's in Games,
-                        Interactive Media, and Mobile Technology. I have experience with full stack web development as
-                        well
-                        as application, software development and UX/UI design.
-                        <br>
-                        <br>
-                        With a passion for web development and UX design, I aim to create innovative and positive
-                        digital
-                        experiences.
-                    </p>
-                </div>
-                <div class="col-2"></div>
+        <div class="row">
+            <div class="col-4 spacing">
+                <h1>My Work</h1>
+                <div class="projects">
+                    <ul>
+                        <li class="enlarge-text" data-bg="Images/7O8A5038.jpg"><a href="#">GIMM Garage</a></li>
+                        <li class="enlarge-text" data-bg="Images/DoggyLanguage.png"><a href="#">Augmented Reality Navigation App</a></li>
+                    </ul>
             </div>
-        </main>
+            <div class="col-8">
+                
+            </div>
+        </div>
     </div>
+
+    <script>
+        const projectsBody = document.querySelector("body");
+        const li = document.querySelectorAll("li");
+
+        li.forEach(el => {
+            el.addEventListener("mouseover", () => {
+                let bg = el.getAttribute("data-bg");
+                projectsBody.style.background = "url(${bg})no-repeat center";
+                console.log("image should appear");
+            });
+        });
+    </script>
 </body>
 
 </html>
