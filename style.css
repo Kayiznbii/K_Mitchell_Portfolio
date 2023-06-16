@@ -12,6 +12,9 @@ h1 {
     font-size: 60px;
 }
 
+.peach-body {
+    background-color: #F7C4A5;
+}
 
 .dark-body {
     background-color: rgb(24,26,24);
@@ -103,19 +106,19 @@ h1 {
 body {
     position: relative;
     min-height: 100vh;
-    background: url(bg.jpg)no-repeat center;
+    background: url(bg.jpg)no-repeat center /cover;
 }
 
-ul {
+.projects-ul {
     padding-top: 15px;
 }
 
-ul li {
+.projects-ul li {
     list-style: none;
     padding-bottom: 15px;
 }
 
-ul li a {
+.projects-ul li a {
     color: white;
     font-size: 30px;
     text-decoration: none;
@@ -134,39 +137,3 @@ li:hover a {
     transform: scale(1.2);
 }
 
-
-/* .projects a {
-    padding-top: 15px;
-}
-
-.projects p span {
-    position: absolute;
-    display: none;
-    z-index: 99;
-    transform: scale(0);
-    overflow: hidden;
-}
-
-.projects p:hover span {
-    display: block;
-    transform: translate(70%, 0%) scale(1);
-}
-
-.projects a:hover {
-    color:#7c5295;
-    text-decoration: none;
-}
-
-.enlarge-text {
-    transition: transform.2s
-}
-
-.enlarge-text:hover {
-    transform: scale(1.2);
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-} */

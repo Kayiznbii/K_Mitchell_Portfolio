@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Home</title>
+    <title>Work</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -32,10 +32,35 @@
         <div class="row">
             <div class="col-4 spacing">
                 <h1>My Work</h1>
-                <div class="projects">
+                <div class="projects projects-ul">
                     <ul>
-                        <li class="enlarge-text" data-bg="Images/7O8A5038.jpg"><a href="#">GIMM Garage</a></li>
-                        <li class="enlarge-text" data-bg="Images/DoggyLanguage.png"><a href="#">Augmented Reality Navigation App</a></li>
+                        <li class="enlarge-text">
+                            <a href="GIMMGarage.html">GIMM Garage</a>
+                        </li>
+                        <li class="enlarge-text">
+                            <a href="Swift.html">Augmented Reality Navigation App</a>
+                        </li>
+                        <li class="enlarge-text">
+                            <a href="#">Dragon Fire Martial Arts</a>
+                        </li>
+                        <li class="enlarge-text">
+                            <a href="ApplicationRedesign.html">Application Redesign</a>
+                        </li>
+                        <li class="enlarge-text">
+                            <a href="#">Augmented Reality Application</a>
+                        </li>
+                        <li class="enlarge-text">
+                            <a href="#">Mobile Narrative</a>
+                        </li>
+                        <li class="enlarge-text">
+                            <a href="#">JavaScript Games</a>
+                        </li>
+                        <li class="enlarge-text">
+                            <a href="#">Meet the Team</a>
+                        </li>
+                        <li class="enlarge-text">
+                            <a href="#">More Projects Coming Soon!</a>
+                        </li>
                     </ul>
             </div>
             <div class="col-8">
@@ -44,18 +69,18 @@
         </div>
     </div>
 
-    <script>
+    <!-- <script>
         const projectsBody = document.querySelector("body");
         const li = document.querySelectorAll("li");
 
         li.forEach(el => {
             el.addEventListener("mouseover", () => {
                 let bg = el.getAttribute("data-bg");
-                projectsBody.style.background = "url(${bg})no-repeat center";
+                projectsBody.style.background = "url(${bg})no-repeat center /cover";
                 console.log("image should appear");
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
