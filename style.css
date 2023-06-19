@@ -137,3 +137,6 @@ li:hover a {
     transform: scale(1.2);
 }
 
+.border {
+    border: 5px solid #b491c8;
+}
